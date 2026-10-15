@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container glass-box">
+        <div class="header">
+            <h1>ماشین حساب BMI</h1>
+            <p>شاخص توده بدنی خود را محاسبه کنید</p>
+        </div>
+
+        <div class="form-container">
+            <div class="input-group">
+                <label for="height">قد (سانتیمتر)</label>
+                <input type="number" id="height" placeholder="مثال: 170">
+            </div>
+
+            <div class="input-group">
+                <label for="weight">وزن (کیلوگرم)</label>
+                <input type="number" id="weight" placeholder="مثال: 65">
+            </div>
+
+            <button class="calc_btn">محاسبه BMI</button>
+
+            <div class="result" id="result">
+                <h3>نتیجه محاسبه شما:</h3>
+                <div class="bmi-value" id="bmi-value">0</div>
+                <div class="status" id="status">کمبود وزن</div>
+                <p id="advice" style="margin-top: 1rem;"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
